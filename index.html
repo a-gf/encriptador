@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <script src="./encriptador.js" defer></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="padlock.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="Logotipo del encriptador">
+    </header>
+    <main class="container">
+        <section class="section-mensaje">
+            <textarea name="" id="textarea-mensaje" cols=70 rows="25" spellcheck="false" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="sugerencia">
+                <figure>
+                    <img src="./assets/exclamation.png" alt="simbolo de admiración">
+                </figure>
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones-section-mensaje">
+                <button id="button-encriptar">Encriptar</button>
+                <button id="button-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section-resultado">
+            <div id="section-resultado-1">
+                <img src="./assets/Muneco.png" alt="Imágen de busqueda">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que deseas encriptar</p>
+            </div>
+            <div id="section-resultado-2">
+                <p><span id="span-resultado">Mensaje</span></p>
+                <button id="button-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer><p>Andres Grijalba Fernández 2022 &copy <a href="https://www.flaticon.com/free-icons/security" title="security icons">Favicon created by Kiranshastry - Flaticon</a></p></footer>
+</body>
+</html>
